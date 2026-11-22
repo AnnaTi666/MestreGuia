@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pokémon: Região de Kamido — Central do Mestre</title>
+
+
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><h1>◉ POKÉMON: REGIÃO DE KAMIDO</h1><p>Central de encontros e ferramentas do Mestre</p></div><span class="badgelevel">GERADOR ALEATÓRIO</span></header>
+<main class="wrap">
+<section class="topgrid">
+ <div class="panel">
+  <h2>Configuração da campanha</h2>
+  <div class="controls">
+   <div><label for="badges">Insígnias conquistadas</label><select id="badges"></select></div>
+   <div><label for="quantity">Quantidade de Pokémon selvagens</label><select id="quantity"><option>1</option><option selected>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+  </div>
+  <p class="note" id="badgeInfo"></p>
+  <div class="region-picker">
+   <div class="region-picker-head"><div><h3>Regiões dos encontros selvagens</h3><p class="note">Marque uma ou mais regiões. Isso afeta somente o gerador de Pokémon selvagens.</p></div>
+   <div class="region-actions"><button type="button" class="secondary small-btn" onclick="setAllRegions(true)">Todas</button><button type="button" class="secondary small-btn" onclick="setAllRegions(false)">Nenhuma</button></div></div>
+   <div id="regionOptions" class="region-grid"></div>
+  </div>
+  <details style="margin-top:12px"><summary style="cursor:pointer;font-weight:800;color:#9e202b">⚙ Ajustar faixas de nível e obediência</summary>
+   <p class="note">As faixas não informadas foram preenchidas como sugestões editáveis. Ajuste conforme o equilíbrio da sua campanha.</p>
+   <div id="rangeSettings" class="controls"></div>
+  </details>
+ </div>
+ <div class="panel">
+  <h2>Geradores</h2>
+  <div class="button-grid">
+   <button onclick="wildEncounter()">Encontro selvagem</button>
+   <button class="secondary" onclick="trainerEncounter()">Treinador</button>
+   <button class="gold" onclick="gymEncounter()">Líder de ginásio</button>
+   <button class="green" onclick="locationEncounter()">Local</button>
+   <button onclick="showItems('common')">Itens comuns</button>
+   <button class="gold" onclick="showItems('rare')">Itens raros</button>
+   <button class="secondary" onclick="showItems('mixed')">Itens misturados</button>
+   <button class="green" onclick="randomEncounter()">Encontro aleatório</button>
+  </div>
+  <p class="note">O encontro aleatório pode gerar Pokémon selvagens, treinadores ou um local.</p>
+ </div>
+</section>
+<section class="panel">
+ <div class="result-head"><h2 id="resultTitle">Resultado do Mestre</h2><div class="toolbar"><button class="secondary" onclick="clearResult()">Limpar resultado</button></div></div>
+ <div id="result" class="result"><div class="empty">Escolha um dos geradores acima para começar sua aventura!</div></div>
+</section>
+</main>
+<footer>Pokémon: Região de Kamido • Ferramenta de apoio ao Mestre</footer>
+
+  <script src="script.js"></script>
+</body></html>

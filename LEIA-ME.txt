@@ -1,0 +1,26 @@
+POKÉMON: REGIÃO DE KAMIDO — CENTRAL DO MESTRE
+
+ARQUIVOS
+- index.html: página principal
+- style.css: aparência e estilos
+- script.js: geradores e regras
+
+COMO ABRIR
+1. Extraia todos os arquivos para a mesma pasta.
+2. Abra index.html no navegador.
+3. Na seção Configuração da campanha, marque uma ou mais regiões.
+4. Clique em Encontro selvagem. As regiões selecionadas filtram somente os Pokémon selvagens.
+
+REGIÕES
+🌊 Aquaria — Água
+❄️ Borealis — Gelo
+🪽 Caelus — Voador
+🔥 Ignis — Fogo
+🌿 Kamido — Normal
+🪨 Solara — Pedra
+🌳 Sylva — Planta
+👻 Umbra — Fantasma
+⚡ Zenith — Elétrico
+
+Os geradores de Treinador e Líder de Ginásio não usam o filtro de regiões.
+É possível marcar várias regiões. Os botões Todas e Nenhuma controlam a seleção.
